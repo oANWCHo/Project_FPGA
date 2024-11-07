@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PWM_Led.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../PWM_Led.gen/sources_1/bd/design_1/ipshared/b28c/hdl" --include "D:/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../PWM_Led.srcs/sources_1/new/pwmLED.v" \
+"../../../../PWM_Led.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../../PWM_Led.ip_user_files/bd/design_1/ip/design_1_pwmLED_0_0/sim/design_1_pwmLED_0_0.v" \
+"../../../../PWM_Led.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../PWM_Led.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
